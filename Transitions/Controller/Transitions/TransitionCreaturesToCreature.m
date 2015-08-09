@@ -32,6 +32,27 @@
     //Create a reference to the selected cell
     NSIndexPath *selectedIndexPath = [fromViewController.creatureTableView indexPathForSelectedRow];
     CreatureCell *cell = (CreatureCell*)[fromViewController.creatureTableView cellForRowAtIndexPath:selectedIndexPath];
+    cell.hidden = YES;
+    
+    //Update our current view to make it look like the
+    //image has popped out
+    fromViewController.filterButton.hidden = YES;
+    
+    //Prepare the destination view controller
+    toViewController.creatureImageView.image = cell.creatureImageView.image;
+    toViewController.view.alpha = 0;
+    toViewController.view.frame = [transitionContext finalFrameForViewController:toViewController];
+    [containerView addSubview:toViewController.view];
+    
+    //Take a snapshot of the view with the missing hole
+    //so we can create the visual relationship
+    toViewController.snapshotView = [fromViewController.view snapshotViewAfterScreenUpdates:YES];
+    toViewController.snapshotView.alpha = 0;
+    [toViewController.view insertSubview:toViewController.snapshotView atIndex:0];
+    
+    //Set up the new frame for where the image should animate to
+    //based on the frame of the imageView in the next view
+    CGRect frame = [containerView convertRect:toViewController.creatureImageView.frame fromView:toViewController.creatureImageView.superview];
     
     //Prepare the imageView that we'll animate
     //IMPORTANT: we MUST remember to remove this imageView when we're done
@@ -39,25 +60,7 @@
     creatureImageView.contentMode = UIViewContentModeScaleAspectFill;
     creatureImageView.frame = [fromViewController.view convertRect:cell.creatureImageView.frame fromView:cell.creatureImageView.superview];
     creatureImageView.clipsToBounds = YES;
-    [fromViewController.view addSubview:creatureImageView];
-    
-    
-    //Prepare the destination view controller
-    toViewController.creatureImageView.image = cell.creatureImageView.image;
-    toViewController.view.hidden = YES;
-    toViewController.view.frame = [transitionContext finalFrameForViewController:toViewController];
-    [containerView addSubview:toViewController.view];
-    
-    //Update our current view to make it look like the
-    //image has popped out
-    cell.titleLabel.hidden = YES;
-    cell.creatureImageView.hidden = YES;
-    fromViewController.filterButton.hidden = YES;
-    
-    //Set up the new frame for where the image should animate to
-    //based on the frame of the imageView in the next view
-    CGRect frame = [containerView convertRect:toViewController.creatureImageView.frame fromView:toViewController.creatureImageView.superview];
-    frame.origin.y = 0;
+    [containerView addSubview:creatureImageView];
     
     [UIView animateWithDuration:duration delay:0 usingSpringWithDamping:0.75 initialSpringVelocity:0.25 options:UIViewAnimationOptionCurveEaseOut animations:^{
         creatureImageView.frame = frame;
@@ -72,7 +75,7 @@
         fromViewController.creatureTableView.alpha = 1;
         
         //Show the destination imageView
-        toViewController.view.hidden = NO;
+        toViewController.view.alpha = 1;
         
         //Hide the snapshot view
         [creatureImageView removeFromSuperview];

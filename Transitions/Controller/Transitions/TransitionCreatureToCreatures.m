@@ -42,7 +42,7 @@
     creatureImageView.contentMode = UIViewContentModeScaleAspectFill;
     creatureImageView.clipsToBounds = YES;
     CGRect imageFrame = [fromViewController.view convertRect:fromViewController.creatureImageView.frame fromView:fromViewController.creatureImageView.superview];
-    imageFrame.origin.y = 64;
+    imageFrame.origin.y += 64; //Compensate for the nav bar
     creatureImageView.frame = imageFrame;
     
     [containerView addSubview:creatureImageView];

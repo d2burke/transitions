@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *creatureImageView;
 
 @property (nonatomic) CGPoint touchPoint;
+@property (strong, nonatomic) UIView *snapshotView;
 @property (strong, nonatomic) UIPanGestureRecognizer *dismissPanGestureRecognizer;
 @property (strong, nonatomic) UIPercentDrivenInteractiveTransition* interactionController;
 

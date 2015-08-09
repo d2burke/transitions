@@ -22,7 +22,6 @@
 
 - (void)viewDidAppear:(BOOL)animated{
     self.navigationController.delegate = self;
-    
     _dismissPanGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(didPanImageView:)];
     [_creatureImageView addGestureRecognizer:_dismissPanGestureRecognizer];
 }
@@ -54,12 +53,21 @@
             CGPoint trueTouchPoint = [recognizer locationInView:self.view];
             CGPoint newCenter = CGPointMake(_creatureImageView.center.x, trueTouchPoint.y + offsetY);
             _creatureImageView.center = newCenter;
+            
+            //Update the frame of the imageView
+            CGFloat dismissalPercentage = [recognizer translationInView:self.view].y / (self.view.frame.size.height/4);
+            CGRect imageFrame = _creatureImageView.frame;
+            imageFrame.size.height = (440 - (dismissalPercentage * 160) > 270) ? 440 - (dismissalPercentage * 160) : 270;
+            _creatureImageView.frame = imageFrame;
+            
+            //Animate alpha of snapshot
+            _snapshotView.alpha = dismissalPercentage;
             break;
         }
         case UIGestureRecognizerStateCancelled:
         case UIGestureRecognizerStateEnded: {
-            //Trigger popViewController
             [self.navigationController popViewControllerAnimated:YES];
+            break;
         }
         default:
             break;
