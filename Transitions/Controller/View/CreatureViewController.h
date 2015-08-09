@@ -8,14 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CreatureViewController : UIViewController <UINavigationControllerDelegate>
+@interface CreatureViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *creatureImageView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
-@property (nonatomic) CGPoint touchPoint;
-@property (strong, nonatomic) UIView *snapshotView;
-@property (strong, nonatomic) UIPanGestureRecognizer *dismissPanGestureRecognizer;
-@property (strong, nonatomic) UIPercentDrivenInteractiveTransition* interactionController;
+@property (strong, nonatomic) UIImage *creatureImage;
+@property (strong, nonatomic) NSString *creatureTitle;
 
 @end

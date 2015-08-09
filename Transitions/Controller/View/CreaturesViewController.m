@@ -8,7 +8,7 @@
 
 #import "CreaturesViewController.h"
 #import "CreatureViewController.h"
-#import "TransitionCreaturesToCreature.h"
+#import "CreatureCell.h"
 
 @interface CreaturesViewController ()
 
@@ -20,38 +20,22 @@
     [super viewDidLoad];
     
     _tableController = [[CreatureTableController alloc] init];
-    _tableController.delegate = self;
-    
     _creatureTableView.delegate = _tableController;
     _creatureTableView.dataSource = _tableController;
 }
 
 - (void)viewDidAppear:(BOOL)animated{
-    self.navigationController.transitioningDelegate = self;
-    self.navigationController.delegate = self;
     self.navigationController.navigationBar.translucent = NO;
     self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
     self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
     [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
 }
 
-#pragma mark - UINavigationController Delegate Methods
-- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
-                                  animationControllerForOperation:(UINavigationControllerOperation)operation
-                                               fromViewController:(UIViewController *)fromVC
-                                                 toViewController:(UIViewController *)toVC {
-    // Check if we're transitioning from this view controller to a DSLSecondViewController
-    if (fromVC == self && [toVC isKindOfClass:[CreatureViewController class]]) {
-        return [[TransitionCreaturesToCreature alloc] init];
-    }
-    else {
-        return nil;
-    }
-}
-
-#pragma mark - CreatureTableControllerDelegate
-- (void)didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"Row: %i", (int)indexPath.row);
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    CreatureCell *cell = (CreatureCell*)[_creatureTableView cellForRowAtIndexPath:[_creatureTableView indexPathForSelectedRow]];
+    CreatureViewController *toVC = (CreatureViewController*)[segue destinationViewController];
+    toVC.creatureTitle = cell.titleLabel.text;
+    toVC.creatureImage = cell.creatureImageView.image;
 }
 
 - (IBAction)displayFilters:(id)sender {

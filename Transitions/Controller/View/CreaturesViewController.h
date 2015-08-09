@@ -11,10 +11,6 @@
 #import "CreatureCell.h"
 
 @interface CreaturesViewController : UIViewController
-<
-UINavigationControllerDelegate,
-CreatureTableControllerDelegate
->
 
 @property (strong, nonatomic) CreatureTableController *tableController;
 @property (weak, nonatomic) IBOutlet UITableView *creatureTableView;

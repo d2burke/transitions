@@ -17,8 +17,6 @@
 
 @implementation TransitionCreaturesToCreature
 
-
-
 -(void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext{
     
     //Create references to the TO and FROM ViewControllers

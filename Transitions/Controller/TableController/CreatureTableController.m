@@ -26,9 +26,6 @@
 }
 
 #pragma mark - UITableView Delegate Methods
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [_delegate didSelectItemAtIndexPath:indexPath];
-}
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _creatures.count;
