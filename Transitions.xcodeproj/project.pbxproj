@@ -17,10 +17,8 @@
 		C5C569061B7661F4008944FE /* CreatureTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C569051B7661F4008944FE /* CreatureTableController.m */; };
 		C5C569081B766B89008944FE /* Material.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5C569071B766B89008944FE /* Material.ttf */; };
 		C5C5690A1B766C2D008944FE /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5C569091B766C2D008944FE /* Roboto-Light.ttf */; };
-		C5C5690E1B766E39008944FE /* TransitionCreaturesToCreature.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C5690D1B766E39008944FE /* TransitionCreaturesToCreature.m */; };
 		C5C569111B766E74008944FE /* CreatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C569101B766E74008944FE /* CreatureViewController.m */; };
 		C5C569141B766EA1008944FE /* CreaturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C569131B766EA1008944FE /* CreaturesViewController.m */; };
-		C5C569171B76A6E3008944FE /* TransitionCreatureToCreatures.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C569161B76A6E3008944FE /* TransitionCreatureToCreatures.m */; };
 		C5C5691A1B76F038008944FE /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5C569191B76F038008944FE /* Roboto-Regular.ttf */; };
 /* End PBXBuildFile section */
 
@@ -52,14 +50,10 @@
 		C5C569051B7661F4008944FE /* CreatureTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreatureTableController.m; path = Controller/TableController/CreatureTableController.m; sourceTree = "<group>"; };
 		C5C569071B766B89008944FE /* Material.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Material.ttf; path = ../../../../de/ios/messaging/assets/font/Material/fonts/Material.ttf; sourceTree = "<group>"; };
 		C5C569091B766C2D008944FE /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "../../../../de/ios/messaging/assets/font/RobotoTTF/Roboto-Light.ttf"; sourceTree = "<group>"; };
-		C5C5690C1B766E39008944FE /* TransitionCreaturesToCreature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransitionCreaturesToCreature.h; path = Controller/Transitions/TransitionCreaturesToCreature.h; sourceTree = "<group>"; };
-		C5C5690D1B766E39008944FE /* TransitionCreaturesToCreature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransitionCreaturesToCreature.m; path = Controller/Transitions/TransitionCreaturesToCreature.m; sourceTree = "<group>"; };
 		C5C5690F1B766E74008944FE /* CreatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreatureViewController.h; path = Controller/View/CreatureViewController.h; sourceTree = "<group>"; };
 		C5C569101B766E74008944FE /* CreatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreatureViewController.m; path = Controller/View/CreatureViewController.m; sourceTree = "<group>"; };
 		C5C569121B766EA0008944FE /* CreaturesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreaturesViewController.h; path = Controller/View/CreaturesViewController.h; sourceTree = "<group>"; };
 		C5C569131B766EA1008944FE /* CreaturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreaturesViewController.m; path = Controller/View/CreaturesViewController.m; sourceTree = "<group>"; };
-		C5C569151B76A6E3008944FE /* TransitionCreatureToCreatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransitionCreatureToCreatures.h; path = Controller/Transitions/TransitionCreatureToCreatures.h; sourceTree = "<group>"; };
-		C5C569161B76A6E3008944FE /* TransitionCreatureToCreatures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransitionCreatureToCreatures.m; path = Controller/Transitions/TransitionCreatureToCreatures.m; sourceTree = "<group>"; };
 		C5C569191B76F038008944FE /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../../../../de/ios/messaging/assets/font/RobotoTTF/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,10 +195,6 @@
 		C5C5690B1B766D98008944FE /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
-				C5C5690C1B766E39008944FE /* TransitionCreaturesToCreature.h */,
-				C5C5690D1B766E39008944FE /* TransitionCreaturesToCreature.m */,
-				C5C569151B76A6E3008944FE /* TransitionCreatureToCreatures.h */,
-				C5C569161B76A6E3008944FE /* TransitionCreatureToCreatures.m */,
 			);
 			name = Transitions;
 			sourceTree = "<group>";
@@ -313,9 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5C569021B7661A4008944FE /* CreatureCell.m in Sources */,
-				C5C569171B76A6E3008944FE /* TransitionCreatureToCreatures.m in Sources */,
 				C5C569141B766EA1008944FE /* CreaturesViewController.m in Sources */,
-				C5C5690E1B766E39008944FE /* TransitionCreaturesToCreature.m in Sources */,
 				C5C569061B7661F4008944FE /* CreatureTableController.m in Sources */,
 				C5C569111B766E74008944FE /* CreatureViewController.m in Sources */,
 				C5C568D21B7589A4008944FE /* main.m in Sources */,
@@ -514,6 +502,7 @@
 				C5C568F11B7589A4008944FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5C568F21B7589A4008944FE /* Build configuration list for PBXNativeTarget "TransitionsTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +511,7 @@
 				C5C568F41B7589A4008944FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
