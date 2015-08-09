@@ -8,6 +8,7 @@
 
 #import "CreaturesViewController.h"
 #import "CreatureViewController.h"
+#import "PickerViewController.h"
 #import "CreatureCell.h"
 
 @interface CreaturesViewController ()
@@ -33,10 +34,19 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    CreatureCell *cell = (CreatureCell*)[_creatureTableView cellForRowAtIndexPath:[_creatureTableView indexPathForSelectedRow]];
-    CreatureViewController *toVC = (CreatureViewController*)[segue destinationViewController];
-    toVC.creatureTitle = cell.titleLabel.text;
-    toVC.creatureImage = cell.creatureImageView.image;
+    if ([segue.identifier isEqualToString:@"ShowCreature"]){
+        CreatureCell *cell = (CreatureCell*)[_creatureTableView cellForRowAtIndexPath:[_creatureTableView indexPathForSelectedRow]];
+        CreatureViewController *toVC = (CreatureViewController*)[segue destinationViewController];
+        toVC.creatureTitle = cell.titleLabel.text;
+        toVC.creatureImage = cell.creatureImageView.image;
+    }
+    else if ([segue.identifier isEqualToString:@"ShowPicker"]){
+        PickerViewController *toVC = (PickerViewController*)[segue destinationViewController];
+        
+        //Grab the FULL view snapshot
+        toVC.snapshot = [self.navigationController.view snapshotViewAfterScreenUpdates:NO];
+        [toVC.view insertSubview:toVC.snapshot atIndex:0];
+    }
 }
 
 #pragma mark - UINavigationController Delegate Methods

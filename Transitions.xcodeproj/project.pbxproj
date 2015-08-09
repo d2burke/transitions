@@ -22,6 +22,7 @@
 		C5C569141B766EA1008944FE /* CreaturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C569131B766EA1008944FE /* CreaturesViewController.m */; };
 		C5C569171B76A6E3008944FE /* TransitionCreatureToCreatures.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C569161B76A6E3008944FE /* TransitionCreatureToCreatures.m */; };
 		C5C5691A1B76F038008944FE /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5C569191B76F038008944FE /* Roboto-Regular.ttf */; };
+		C5C569231B76FB65008944FE /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C569221B76FB65008944FE /* PickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		C5C569151B76A6E3008944FE /* TransitionCreatureToCreatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransitionCreatureToCreatures.h; path = Controller/Transitions/TransitionCreatureToCreatures.h; sourceTree = "<group>"; };
 		C5C569161B76A6E3008944FE /* TransitionCreatureToCreatures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransitionCreatureToCreatures.m; path = Controller/Transitions/TransitionCreatureToCreatures.m; sourceTree = "<group>"; };
 		C5C569191B76F038008944FE /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../../../../de/ios/messaging/assets/font/RobotoTTF/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		C5C569211B76FB65008944FE /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PickerViewController.h; path = Controller/View/PickerViewController.h; sourceTree = "<group>"; };
+		C5C569221B76FB65008944FE /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PickerViewController.m; path = Controller/View/PickerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,8 @@
 				C5C569131B766EA1008944FE /* CreaturesViewController.m */,
 				C5C5690F1B766E74008944FE /* CreatureViewController.h */,
 				C5C569101B766E74008944FE /* CreatureViewController.m */,
+				C5C569211B76FB65008944FE /* PickerViewController.h */,
+				C5C569221B76FB65008944FE /* PickerViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -316,6 +321,7 @@
 				C5C569171B76A6E3008944FE /* TransitionCreatureToCreatures.m in Sources */,
 				C5C569141B766EA1008944FE /* CreaturesViewController.m in Sources */,
 				C5C5690E1B766E39008944FE /* TransitionCreaturesToCreature.m in Sources */,
+				C5C569231B76FB65008944FE /* PickerViewController.m in Sources */,
 				C5C569061B7661F4008944FE /* CreatureTableController.m in Sources */,
 				C5C569111B766E74008944FE /* CreatureViewController.m in Sources */,
 				C5C568D21B7589A4008944FE /* main.m in Sources */,
@@ -514,6 +520,7 @@
 				C5C568F11B7589A4008944FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5C568F21B7589A4008944FE /* Build configuration list for PBXNativeTarget "TransitionsTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +529,7 @@
 				C5C568F41B7589A4008944FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
