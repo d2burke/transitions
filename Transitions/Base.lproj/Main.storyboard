@@ -14,6 +14,9 @@
         <mutableArray key="Roboto-Regular.ttf">
             <string>Roboto-Regular</string>
             <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -66,7 +69,7 @@
                                         <connections>
                                             <outlet property="creatureImageView" destination="0FD-XS-3hM" id="VBU-IY-3zf"/>
                                             <outlet property="titleLabel" destination="GQT-hw-Crn" id="gL5-Dh-hit"/>
-                                            <segue destination="sOk-ZK-uMK" kind="show" id="ow7-cX-hSM"/>
+                                            <segue destination="sOk-ZK-uMK" kind="show" identifier="ShowCreature" id="ow7-cX-hSM"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -105,6 +108,9 @@
                                     <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="c6R-uf-2dO" kind="presentation" identifier="ShowPicker" animates="NO" id="wNo-dV-GpN"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -181,6 +187,101 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xqb-ui-veC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1612.5" y="396.5"/>
+        </scene>
+        <!--Picker View Controller-->
+        <scene sceneID="szJ-aU-FBU">
+            <objects>
+                <viewController id="c6R-uf-2dO" customClass="PickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qBI-11-UFO"/>
+                        <viewControllerLayoutGuide type="bottom" id="cyu-qX-v8v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jwN-bH-8DY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIc-FH-1tt">
+                                <rect key="frame" x="0.0" y="727" width="375" height="180"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENI-vB-t72">
+                                        <rect key="frame" x="0.0" y="120" width="375" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="jti-YF-Crg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                        <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectOption:" destination="c6R-uf-2dO" eventType="touchUpInside" id="llv-2j-Tff"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jdg-iy-dHk">
+                                        <rect key="frame" x="0.0" y="60" width="375" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="k3A-mj-7qq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                        <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Choice 2">
+                                            <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectOption:" destination="c6R-uf-2dO" eventType="touchUpInside" id="8x2-uR-gt1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQ4-bD-1Qn">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="5M7-g4-Tij"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                        <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Choice 1">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectOption:" destination="c6R-uf-2dO" eventType="touchUpInside" id="XU0-LB-9VZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="1am-y8-pFu"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jdg-iy-dHk" secondAttribute="trailing" id="3KP-dv-TfO"/>
+                                    <constraint firstItem="Jdg-iy-dHk" firstAttribute="top" secondItem="OQ4-bD-1Qn" secondAttribute="bottom" id="3Qm-KA-55G"/>
+                                    <constraint firstAttribute="trailing" secondItem="ENI-vB-t72" secondAttribute="trailing" id="Ijo-cF-HBY"/>
+                                    <constraint firstItem="OQ4-bD-1Qn" firstAttribute="leading" secondItem="LIc-FH-1tt" secondAttribute="leading" id="Rau-94-RPC"/>
+                                    <constraint firstItem="ENI-vB-t72" firstAttribute="leading" secondItem="LIc-FH-1tt" secondAttribute="leading" id="Vv1-Cd-cGH"/>
+                                    <constraint firstAttribute="trailing" secondItem="OQ4-bD-1Qn" secondAttribute="trailing" id="Wrt-41-CLc"/>
+                                    <constraint firstItem="ENI-vB-t72" firstAttribute="top" secondItem="Jdg-iy-dHk" secondAttribute="bottom" id="i0e-KJ-GVl"/>
+                                    <constraint firstItem="Jdg-iy-dHk" firstAttribute="leading" secondItem="LIc-FH-1tt" secondAttribute="leading" id="noE-hR-djF"/>
+                                    <constraint firstAttribute="bottom" secondItem="ENI-vB-t72" secondAttribute="bottom" id="tUd-VC-MTR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cyu-qX-v8v" firstAttribute="top" secondItem="LIc-FH-1tt" secondAttribute="bottom" constant="-240" id="6ac-UQ-BhA"/>
+                            <constraint firstItem="LIc-FH-1tt" firstAttribute="leading" secondItem="jwN-bH-8DY" secondAttribute="leading" id="ArS-2M-rrg"/>
+                            <constraint firstAttribute="trailing" secondItem="LIc-FH-1tt" secondAttribute="trailing" id="If5-xA-Eid"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="button1" destination="OQ4-bD-1Qn" id="g7A-8a-jhg"/>
+                        <outlet property="button2" destination="Jdg-iy-dHk" id="vpG-Bx-jlI"/>
+                        <outlet property="cancelButton" destination="ENI-vB-t72" id="Enb-FB-I6Z"/>
+                        <outlet property="pickerBottomConstraint" destination="6ac-UQ-BhA" id="ydU-fe-wCh"/>
+                        <outlet property="pickerView" destination="LIc-FH-1tt" id="QDB-qn-uCq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VbE-m5-XNa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1104.5" y="1166.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Cc3-jV-tRu">
