@@ -11,6 +11,10 @@
             <string>Roboto-Light</string>
             <string>Roboto-Light</string>
         </mutableArray>
+        <mutableArray key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
+        </mutableArray>
     </customFonts>
     <scenes>
         <!--Creatures View Controller-->
@@ -38,12 +42,12 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0FD-XS-3hM">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="270"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These are the animals that live in the sea" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQT-hw-Crn">
-                                                    <rect key="frame" x="18" y="200" width="339" height="60"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These are the animals that live in the sea" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQT-hw-Crn">
+                                                    <rect key="frame" x="18" y="180" width="339" height="80"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="60" id="MIP-S2-E1W"/>
+                                                        <constraint firstAttribute="height" constant="80" id="MIP-S2-E1W"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="22"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -132,12 +136,24 @@
                                     <constraint firstAttribute="height" constant="440" id="qxp-XU-MlB"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These are the animals that live in the sea" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jo-if-ZkS">
+                                <rect key="frame" x="18" y="453" width="339" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="8Cp-P1-LkO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="22"/>
+                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="6jo-if-ZkS" firstAttribute="top" secondItem="aOf-D7-IuQ" secondAttribute="bottom" constant="13" id="Col-Ox-g0b"/>
                             <constraint firstItem="aOf-D7-IuQ" firstAttribute="top" secondItem="yoJ-OK-4cc" secondAttribute="top" id="RLC-kW-Ka5"/>
                             <constraint firstItem="aOf-D7-IuQ" firstAttribute="leading" secondItem="yoJ-OK-4cc" secondAttribute="leading" id="XaB-P0-zP1"/>
                             <constraint firstAttribute="trailing" secondItem="aOf-D7-IuQ" secondAttribute="trailing" id="YoP-f8-UTf"/>
+                            <constraint firstAttribute="trailing" secondItem="6jo-if-ZkS" secondAttribute="trailing" constant="18" id="bB0-II-X2l"/>
+                            <constraint firstItem="6jo-if-ZkS" firstAttribute="leading" secondItem="yoJ-OK-4cc" secondAttribute="leading" constant="18" id="eV8-Ot-8zE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sMq-XO-IFo">
@@ -159,6 +175,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="creatureImageView" destination="aOf-D7-IuQ" id="iML-iN-hAt"/>
+                        <outlet property="titleLabel" destination="6jo-if-ZkS" id="ImI-cp-teQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xqb-ui-veC" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -21,6 +21,7 @@
 		C5C569111B766E74008944FE /* CreatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C569101B766E74008944FE /* CreatureViewController.m */; };
 		C5C569141B766EA1008944FE /* CreaturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C569131B766EA1008944FE /* CreaturesViewController.m */; };
 		C5C569171B76A6E3008944FE /* TransitionCreatureToCreatures.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C569161B76A6E3008944FE /* TransitionCreatureToCreatures.m */; };
+		C5C5691A1B76F038008944FE /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5C569191B76F038008944FE /* Roboto-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		C5C569131B766EA1008944FE /* CreaturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreaturesViewController.m; path = Controller/View/CreaturesViewController.m; sourceTree = "<group>"; };
 		C5C569151B76A6E3008944FE /* TransitionCreatureToCreatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransitionCreatureToCreatures.h; path = Controller/Transitions/TransitionCreatureToCreatures.h; sourceTree = "<group>"; };
 		C5C569161B76A6E3008944FE /* TransitionCreatureToCreatures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransitionCreatureToCreatures.m; path = Controller/Transitions/TransitionCreatureToCreatures.m; sourceTree = "<group>"; };
+		C5C569191B76F038008944FE /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../../../../de/ios/messaging/assets/font/RobotoTTF/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			children = (
 				C5C569071B766B89008944FE /* Material.ttf */,
 				C5C569091B766C2D008944FE /* Roboto-Light.ttf */,
+				C5C569191B76F038008944FE /* Roboto-Regular.ttf */,
 				C5C568D01B7589A4008944FE /* Info.plist */,
 				C5C568D11B7589A4008944FE /* main.m */,
 			);
@@ -286,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5C5691A1B76F038008944FE /* Roboto-Regular.ttf in Resources */,
 				C5C568DB1B7589A4008944FE /* Main.storyboard in Resources */,
 				C5C568E01B7589A4008944FE /* LaunchScreen.xib in Resources */,
 				C5C5690A1B766C2D008944FE /* Roboto-Light.ttf in Resources */,

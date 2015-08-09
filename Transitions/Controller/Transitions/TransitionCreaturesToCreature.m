@@ -39,6 +39,8 @@
     fromViewController.filterButton.hidden = YES;
     
     //Prepare the destination view controller
+    toViewController.titleLabel.text = cell.titleLabel.text;
+    [toViewController.titleLabel sizeToFit];
     toViewController.creatureImageView.image = cell.creatureImageView.image;
     toViewController.view.alpha = 0;
     toViewController.view.frame = [transitionContext finalFrameForViewController:toViewController];
@@ -58,7 +60,9 @@
     //IMPORTANT: we MUST remember to remove this imageView when we're done
     UIImageView *creatureImageView = [[UIImageView alloc] initWithImage:cell.creatureImageView.image];
     creatureImageView.contentMode = UIViewContentModeScaleAspectFill;
-    creatureImageView.frame = [fromViewController.view convertRect:cell.creatureImageView.frame fromView:cell.creatureImageView.superview];
+    CGRect imageFrame = [fromViewController.view convertRect:cell.creatureImageView.frame fromView:cell.creatureImageView.superview];
+    imageFrame.origin.y += 64;
+    creatureImageView.frame = imageFrame;
     creatureImageView.clipsToBounds = YES;
     [containerView addSubview:creatureImageView];
     

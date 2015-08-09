@@ -28,11 +28,11 @@
     NSTimeInterval duration = [self transitionDuration:transitionContext];
     
     fromViewController.view.alpha = 0;
-    toViewController.creatureTableView.alpha = 0;
+    toViewController.creatureTableView.alpha = fromViewController.snapshotView.alpha;
     
     CreatureCell *cell = (CreatureCell*)[toViewController.creatureTableView cellForRowAtIndexPath:[toViewController.creatureTableView indexPathForSelectedRow]];
     cell.creatureImageView.hidden = YES;
-    cell.titleLabel.hidden = YES;
+    cell.titleLabel.alpha = 0;
     
     //Prepare the destination view controller
     toViewController.view.frame = [transitionContext finalFrameForViewController:toViewController];
@@ -58,8 +58,12 @@
         fromViewController.view.alpha = 0;
     } completion:^(BOOL finished) {
         cell.creatureImageView.hidden = NO;
-        cell.titleLabel.hidden = NO;
         [creatureImageView removeFromSuperview];
+        
+        //Fade title back in
+        [UIView animateWithDuration:0.2 animations:^{
+            cell.titleLabel.alpha = 1;
+        }];
         
         //THIS IS IMPORTANT: This notifies the app that the transition is complete
         [transitionContext completeTransition:!transitionContext.transitionWasCancelled];

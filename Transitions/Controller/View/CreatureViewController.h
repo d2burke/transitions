@@ -11,6 +11,7 @@
 @interface CreatureViewController : UIViewController <UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *creatureImageView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 @property (nonatomic) CGPoint touchPoint;
 @property (strong, nonatomic) UIView *snapshotView;

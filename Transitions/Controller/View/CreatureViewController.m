@@ -44,6 +44,7 @@
     switch (recognizer.state) {
         case UIGestureRecognizerStateBegan:{
             _touchPoint = [recognizer locationInView:_creatureImageView];
+            _titleLabel.hidden = YES;
             break;
         }
         case UIGestureRecognizerStateChanged:{
@@ -55,9 +56,11 @@
             _creatureImageView.center = newCenter;
             
             //Update the frame of the imageView
-            CGFloat dismissalPercentage = [recognizer translationInView:self.view].y / (self.view.frame.size.height/4);
+            CGFloat dismissalPercentage = fabs([recognizer translationInView:self.view].y) / (self.view.frame.size.height/4);
+            CGFloat imageHeight = 440 - (dismissalPercentage * 160);
+            imageHeight = (imageHeight > 440) ? 400 : imageHeight < 270 ? 270 : imageHeight;
             CGRect imageFrame = _creatureImageView.frame;
-            imageFrame.size.height = (440 - (dismissalPercentage * 160) > 270) ? 440 - (dismissalPercentage * 160) : 270;
+            imageFrame.size.height = imageHeight;
             _creatureImageView.frame = imageFrame;
             
             //Animate alpha of snapshot

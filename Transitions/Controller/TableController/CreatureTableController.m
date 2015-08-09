@@ -14,7 +14,13 @@
 -(id)init{
     self = [super init];
     if(self){
-        _creatures = @[@"turtle1",@"shark2",@"ray1",@"reef1",@"fish1"];
+        _creatures = @[
+                       @{@"image":@"turtle1", @"description":@"Sea turtles are beautiful and rare.  You might see a share before one of these"},
+                       @{@"image":@"shark2",@"description":@"For Great White Sharks, everything is on the menu, including you"},
+                       @{@"image":@"ray1", @"description":@"Rays like this can be nearly the length of a school bus"},
+                       @{@"image":@"reef1", @"description":@"Coral Reefs are home to millions of organisms"},
+                       @{@"image":@"fish1", @"description":@"Schools of fish in the FL Keys will swim right around you"}
+                    ];
     }
     return self;
 }
@@ -34,7 +40,9 @@
     if(cell == nil){
         cell = [[CreatureCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    cell.creatureImageView.image = [UIImage imageNamed:[_creatures objectAtIndex:indexPath.row]];
+    cell.titleLabel.text = [[_creatures objectAtIndex:indexPath.row] objectForKey:@"description"];
+    [cell.titleLabel sizeToFit];
+    cell.creatureImageView.image = [UIImage imageNamed:[[_creatures objectAtIndex:indexPath.row] objectForKey:@"image"]];
     return cell;
 }
 
