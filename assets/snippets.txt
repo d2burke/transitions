@@ -24,17 +24,15 @@ self.navigationController.delegate = self;
 
 ** CreatureViewController
 
+.h
+<UINavigationControllerDelegate>
 
+.m
 //TRANSITION CODE
 #import "CreaturesViewController.h"
 #import "TransitionCreatureToCreatures.h"
 
-<UINavigationControllerDelegate>
 self.navigationController.delegate = self;
-
-- (void)viewDidAppear:(BOOL)animated{
-    self.navigationController.delegate = self;
-}
 
 #pragma mark - UINavigationController Delegate Methods
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
