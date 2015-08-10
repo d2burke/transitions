@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C51E15581B784B80006724C5 /* Material.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C51E15551B784B80006724C5 /* Material.ttf */; };
+		C51E15591B784B80006724C5 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C51E15561B784B80006724C5 /* Roboto-Light.ttf */; };
+		C51E155A1B784B80006724C5 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C51E15571B784B80006724C5 /* Roboto-Regular.ttf */; };
 		C5C568D21B7589A4008944FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C568D11B7589A4008944FE /* main.m */; };
 		C5C568DB1B7589A4008944FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5C568D91B7589A4008944FE /* Main.storyboard */; };
 		C5C568DD1B7589A4008944FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5C568DC1B7589A4008944FE /* Images.xcassets */; };
@@ -15,11 +18,8 @@
 		C5C568FA1B758A2B008944FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C568F91B758A2B008944FE /* AppDelegate.m */; };
 		C5C569021B7661A4008944FE /* CreatureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C569011B7661A4008944FE /* CreatureCell.m */; };
 		C5C569061B7661F4008944FE /* CreatureTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C569051B7661F4008944FE /* CreatureTableController.m */; };
-		C5C569081B766B89008944FE /* Material.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5C569071B766B89008944FE /* Material.ttf */; };
-		C5C5690A1B766C2D008944FE /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5C569091B766C2D008944FE /* Roboto-Light.ttf */; };
 		C5C569111B766E74008944FE /* CreatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C569101B766E74008944FE /* CreatureViewController.m */; };
 		C5C569141B766EA1008944FE /* CreaturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C569131B766EA1008944FE /* CreaturesViewController.m */; };
-		C5C5691A1B76F038008944FE /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5C569191B76F038008944FE /* Roboto-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C51E15551B784B80006724C5 /* Material.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Material.ttf; path = assets/font/Material.ttf; sourceTree = SOURCE_ROOT; };
+		C51E15561B784B80006724C5 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "assets/font/Roboto-Light.ttf"; sourceTree = SOURCE_ROOT; };
+		C51E15571B784B80006724C5 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "assets/font/Roboto-Regular.ttf"; sourceTree = SOURCE_ROOT; };
 		C5C568CC1B7589A4008944FE /* Transitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C568D01B7589A4008944FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5C568D11B7589A4008944FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -48,13 +51,10 @@
 		C5C569011B7661A4008944FE /* CreatureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreatureCell.m; path = View/TableView/Cell/CreatureCell.m; sourceTree = "<group>"; };
 		C5C569041B7661F4008944FE /* CreatureTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreatureTableController.h; path = Controller/TableController/CreatureTableController.h; sourceTree = "<group>"; };
 		C5C569051B7661F4008944FE /* CreatureTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreatureTableController.m; path = Controller/TableController/CreatureTableController.m; sourceTree = "<group>"; };
-		C5C569071B766B89008944FE /* Material.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Material.ttf; path = ../../../../de/ios/messaging/assets/font/Material/fonts/Material.ttf; sourceTree = "<group>"; };
-		C5C569091B766C2D008944FE /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "../../../../de/ios/messaging/assets/font/RobotoTTF/Roboto-Light.ttf"; sourceTree = "<group>"; };
 		C5C5690F1B766E74008944FE /* CreatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreatureViewController.h; path = Controller/View/CreatureViewController.h; sourceTree = "<group>"; };
 		C5C569101B766E74008944FE /* CreatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreatureViewController.m; path = Controller/View/CreatureViewController.m; sourceTree = "<group>"; };
 		C5C569121B766EA0008944FE /* CreaturesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreaturesViewController.h; path = Controller/View/CreaturesViewController.h; sourceTree = "<group>"; };
 		C5C569131B766EA1008944FE /* CreaturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreaturesViewController.m; path = Controller/View/CreaturesViewController.m; sourceTree = "<group>"; };
-		C5C569191B76F038008944FE /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../../../../de/ios/messaging/assets/font/RobotoTTF/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +106,9 @@
 		C5C568CF1B7589A4008944FE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C5C569071B766B89008944FE /* Material.ttf */,
-				C5C569091B766C2D008944FE /* Roboto-Light.ttf */,
-				C5C569191B76F038008944FE /* Roboto-Regular.ttf */,
+				C51E15551B784B80006724C5 /* Material.ttf */,
+				C51E15561B784B80006724C5 /* Roboto-Light.ttf */,
+				C51E15571B784B80006724C5 /* Roboto-Regular.ttf */,
 				C5C568D01B7589A4008944FE /* Info.plist */,
 				C5C568D11B7589A4008944FE /* main.m */,
 			);
@@ -279,12 +279,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5C5691A1B76F038008944FE /* Roboto-Regular.ttf in Resources */,
+				C51E155A1B784B80006724C5 /* Roboto-Regular.ttf in Resources */,
 				C5C568DB1B7589A4008944FE /* Main.storyboard in Resources */,
 				C5C568E01B7589A4008944FE /* LaunchScreen.xib in Resources */,
-				C5C5690A1B766C2D008944FE /* Roboto-Light.ttf in Resources */,
+				C51E15591B784B80006724C5 /* Roboto-Light.ttf in Resources */,
 				C5C568DD1B7589A4008944FE /* Images.xcassets in Resources */,
-				C5C569081B766B89008944FE /* Material.ttf in Resources */,
+				C51E15581B784B80006724C5 /* Material.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
