@@ -10,8 +10,6 @@
 		C51E15581B784B80006724C5 /* Material.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C51E15551B784B80006724C5 /* Material.ttf */; };
 		C51E15591B784B80006724C5 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C51E15561B784B80006724C5 /* Roboto-Light.ttf */; };
 		C51E155A1B784B80006724C5 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C51E15571B784B80006724C5 /* Roboto-Regular.ttf */; };
-		C54920911B784E51007FFE96 /* TransitionCreaturesToCreature.m in Sources */ = {isa = PBXBuildFile; fileRef = C549208E1B784E51007FFE96 /* TransitionCreaturesToCreature.m */; };
-		C54920921B784E51007FFE96 /* TransitionCreatureToCreatures.m in Sources */ = {isa = PBXBuildFile; fileRef = C54920901B784E51007FFE96 /* TransitionCreatureToCreatures.m */; };
 		C5C568D21B7589A4008944FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C568D11B7589A4008944FE /* main.m */; };
 		C5C568DB1B7589A4008944FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5C568D91B7589A4008944FE /* Main.storyboard */; };
 		C5C568DD1B7589A4008944FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5C568DC1B7589A4008944FE /* Images.xcassets */; };
@@ -38,10 +36,6 @@
 		C51E15551B784B80006724C5 /* Material.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Material.ttf; path = assets/font/Material.ttf; sourceTree = SOURCE_ROOT; };
 		C51E15561B784B80006724C5 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "assets/font/Roboto-Light.ttf"; sourceTree = SOURCE_ROOT; };
 		C51E15571B784B80006724C5 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "assets/font/Roboto-Regular.ttf"; sourceTree = SOURCE_ROOT; };
-		C549208D1B784E51007FFE96 /* TransitionCreaturesToCreature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransitionCreaturesToCreature.h; path = Controller/Transitions/TransitionCreaturesToCreature.h; sourceTree = "<group>"; };
-		C549208E1B784E51007FFE96 /* TransitionCreaturesToCreature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransitionCreaturesToCreature.m; path = Controller/Transitions/TransitionCreaturesToCreature.m; sourceTree = "<group>"; };
-		C549208F1B784E51007FFE96 /* TransitionCreatureToCreatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransitionCreatureToCreatures.h; path = Controller/Transitions/TransitionCreatureToCreatures.h; sourceTree = "<group>"; };
-		C54920901B784E51007FFE96 /* TransitionCreatureToCreatures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransitionCreatureToCreatures.m; path = Controller/Transitions/TransitionCreatureToCreatures.m; sourceTree = "<group>"; };
 		C5C568CC1B7589A4008944FE /* Transitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C568D01B7589A4008944FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5C568D11B7589A4008944FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -201,10 +195,6 @@
 		C5C5690B1B766D98008944FE /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
-				C549208D1B784E51007FFE96 /* TransitionCreaturesToCreature.h */,
-				C549208E1B784E51007FFE96 /* TransitionCreaturesToCreature.m */,
-				C549208F1B784E51007FFE96 /* TransitionCreatureToCreatures.h */,
-				C54920901B784E51007FFE96 /* TransitionCreatureToCreatures.m */,
 			);
 			name = Transitions;
 			sourceTree = "<group>";
@@ -313,10 +303,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5C569021B7661A4008944FE /* CreatureCell.m in Sources */,
-				C54920921B784E51007FFE96 /* TransitionCreatureToCreatures.m in Sources */,
 				C5C569141B766EA1008944FE /* CreaturesViewController.m in Sources */,
 				C5C569061B7661F4008944FE /* CreatureTableController.m in Sources */,
-				C54920911B784E51007FFE96 /* TransitionCreaturesToCreature.m in Sources */,
 				C5C569111B766E74008944FE /* CreatureViewController.m in Sources */,
 				C5C568D21B7589A4008944FE /* main.m in Sources */,
 				C5C568FA1B758A2B008944FE /* AppDelegate.m in Sources */,
