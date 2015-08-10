@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2240B102-A95F-4580-8244-C34EA9A50312</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Transitions</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A38FA7DA450CF8829F5D8565A778E1F245716C1C</key>
+		<string>https://github.dominionenterprises.com/daniel-burke/messaging.git</string>
+		<key>DFE10CAF2FE839A69E622B2310709F75BD885819</key>
+		<string>https://bitbucket.org/d2burke/transitions.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Transitions.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A38FA7DA450CF8829F5D8565A778E1F245716C1C</key>
+		<string>../../../../../de/ios/messaging</string>
+		<key>DFE10CAF2FE839A69E622B2310709F75BD885819</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/d2burke/transitions.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DFE10CAF2FE839A69E622B2310709F75BD885819</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A38FA7DA450CF8829F5D8565A778E1F245716C1C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>messaging</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DFE10CAF2FE839A69E622B2310709F75BD885819</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Transitions</string>
+		</dict>
+	</array>
+</dict>
+</plist>

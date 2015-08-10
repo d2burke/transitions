@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DFE10CAF2FE839A69E622B2310709F75BD885819",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A38FA7DA450CF8829F5D8565A778E1F245716C1C" : 0,
+    "DFE10CAF2FE839A69E622B2310709F75BD885819" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2240B102-A95F-4580-8244-C34EA9A50312",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A38FA7DA450CF8829F5D8565A778E1F245716C1C" : "..\/..\/de\/ios\/messaging",
+    "DFE10CAF2FE839A69E622B2310709F75BD885819" : "Transitions\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Transitions",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Transitions.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.dominionenterprises.com\/daniel-burke\/messaging.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A38FA7DA450CF8829F5D8565A778E1F245716C1C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/d2burke\/transitions.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DFE10CAF2FE839A69E622B2310709F75BD885819"
+    }
+  ]
+}
