@@ -44,12 +44,6 @@
     toViewController.view.frame = [transitionContext finalFrameForViewController:toViewController];
     [containerView addSubview:toViewController.view];
     
-    //Take a snapshot of the view with the missing hole
-    //so we can create the visual relationship
-    toViewController.snapshotView = [fromViewController.view snapshotViewAfterScreenUpdates:YES];
-    toViewController.snapshotView.alpha = 0;
-    [toViewController.view insertSubview:toViewController.snapshotView atIndex:0];
-    
     //Set up the new frame for where the image should animate to
     //based on the frame of the imageView in the next view
     CGRect frame = [containerView convertRect:toViewController.creatureImageView.frame fromView:toViewController.creatureImageView.superview];

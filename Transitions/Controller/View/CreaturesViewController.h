@@ -10,7 +10,7 @@
 #import "CreatureTableController.h"
 #import "CreatureCell.h"
 
-@interface CreaturesViewController : UIViewController
+@interface CreaturesViewController : UIViewController <UINavigationControllerDelegate>
 
 @property (strong, nonatomic) CreatureTableController *tableController;
 @property (weak, nonatomic) IBOutlet UITableView *creatureTableView;

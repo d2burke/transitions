@@ -28,7 +28,6 @@
     NSTimeInterval duration = [self transitionDuration:transitionContext];
     
     fromViewController.view.alpha = 0;
-    toViewController.creatureTableView.alpha = fromViewController.snapshotView.alpha;
     
     CreatureCell *cell = (CreatureCell*)[toViewController.creatureTableView cellForRowAtIndexPath:[toViewController.creatureTableView indexPathForSelectedRow]];
     cell.creatureImageView.hidden = YES;

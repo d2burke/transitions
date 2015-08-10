@@ -9,6 +9,7 @@
 #import "CreaturesViewController.h"
 #import "CreatureViewController.h"
 #import "CreatureCell.h"
+#import "TransitionCreaturesToCreature.h"
 
 @interface CreaturesViewController ()
 
@@ -25,10 +26,25 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated{
+    self.navigationController.delegate = self;
     self.navigationController.navigationBar.translucent = NO;
     self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
     self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
     [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+}
+
+#pragma mark - UINavigationController Delegate Methods
+- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+                                  animationControllerForOperation:(UINavigationControllerOperation)operation
+                                               fromViewController:(UIViewController *)fromVC
+                                                 toViewController:(UIViewController *)toVC {
+    // Check if we're transitioning from this view controller to a DSLSecondViewController
+    if (fromVC == self && [toVC isKindOfClass:[CreatureViewController class]]) {
+        return [[TransitionCreaturesToCreature alloc] init];
+    }
+    else {
+        return nil;
+    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
