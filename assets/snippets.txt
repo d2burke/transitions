@@ -94,3 +94,16 @@ _dismissPanGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:se
             break;
     }
 }
+
+** TransitionCreatures
+
+    
+    //Take a snapshot of the view with the missing hole
+    //so we can create the visual relationship
+    toViewController.snapshotView = [fromViewController.view snapshotViewAfterScreenUpdates:YES];
+    toViewController.snapshotView.alpha = 0;
+    [toViewController.view insertSubview:toViewController.snapshotView atIndex:0];
+    
+** TransitionCreature
+
+    toViewController.creatureTableView.alpha = fromViewController.snapshotView.alpha;
