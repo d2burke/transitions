@@ -1,10 +1,11 @@
 ADD TRANSITION CLASSES
 
 ** CreaturesViewController (Parent)
-
-#import "TransitionCreaturesToCreature.h"
-
+.h
 <UINavigationControllerDelegate>
+
+.m
+#import "TransitionCreaturesToCreature.h"
 self.navigationController.delegate = self;
 
 #pragma mark - UINavigationController Delegate Methods
